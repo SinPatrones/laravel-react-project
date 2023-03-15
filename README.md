@@ -1,6 +1,7 @@
 # Challenge Laravel and React
 
 ## Available Scripts with React.js
+
 We have to locate in the **fe-project** directory
 
 First we have to install all dependencies, you can run:
@@ -14,23 +15,27 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-
 ## Available Scripts with Laravel
+
 We have to locate in the **be-project** directory
 
 First we have to install all dependencies of Laravel
 
 ### `composer install`
 
-After that we have to create our database with name `beproject` or run this script in your database 
+This project is using MySQL, and it's access have to set in a file named `.env`, in db connection section we have to set
+the name of database (beproject), host, port and password.
+
+After that we have to create our database with name `beproject` or run this script in your database
 
 ### `CREATE DATABASE IF NOT EXISTS 'beproject'`
 
-No we have to eject the migration to create our table in the database
+Now we have to eject the migration to create our table in the database
 
 ### `php artisan migrate`
 
 or run this script in your database
+
 ```sql
 CREATE TABLE IF NOT EXISTS `tasks` (
 `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
